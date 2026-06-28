@@ -7,6 +7,10 @@ env:
   AWS_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
   AWS_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
   AWS_region: 'us-east-1'
+
+permissions:
+  id-token: write
+  contents: read
   
 jobs:
   terraform:
